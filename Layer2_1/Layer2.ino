@@ -1,13 +1,3 @@
-/*  Flow of the code
-
-  1 - Put WiFi in STA Mode
-  2 - Intialize ESPNOW
-  3 - Add peer device
-  4 - Define Send Callback Function
-  5 - Define Receive Callback Function
-
-*/
-
 #include <esp_now.h>
 #include <WiFi.h>
 #include <DHT.h>
@@ -118,7 +108,9 @@ void loop()
   //Get DHT readings
   getReadings();
 
-  myData.id = 2;
+  //myData.id=1 for nodes 1 and myData.id=2 for nodes 2
+  //uncomment the code below to activate it
+  //myData.id = 2;
   myData.temp = temperature;
   myData.hum = humidity;
   myData.moist = moisture;
