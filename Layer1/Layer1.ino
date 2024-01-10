@@ -1,12 +1,3 @@
-/*  Flow of the code
-
-  1 - Put WiFi in STA Mode
-  2 - Intialize ESPNOW
-  3 - Add peer device
-  4 - Define Send Callback Function
-  5 - Define Receive Callback Function
-
-*/
 
 #include <esp_now.h>
 #include <WiFi.h>
